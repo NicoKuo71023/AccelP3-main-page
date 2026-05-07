@@ -24,7 +24,7 @@ const demos = [
     title: "AI Scientist for Trial Planning",
     blurb: "Turn a plain-language hypothesis into a structured trial plan.",
     label: "AI Scientist Demo Video",
-    videoSrc: "/videos/ai-scientist-demo.mp4",
+    videoSrc: `${import.meta.env.BASE_URL}videos/ai-scientist-demo.mp4`,
     chips: ["Hypothesis input", "Structured plan", "Reviewable output"],
   },
   {
@@ -32,7 +32,7 @@ const demos = [
     title: "Early outcome prediction",
     blurb: "Conversational interface for early recovery and risk signals prediction.",
     label: "Early outcome prediction demo video",
-    videoSrc: "/videos/endpoint-detection-demo.mp4",
+    videoSrc: `${import.meta.env.BASE_URL}videos/endpoint-detection-demo.mp4`,
     chips: ["Chat-based exploration", "Recovery signals", "Early risk flags"],
   },
 ];

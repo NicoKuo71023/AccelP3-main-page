@@ -3,6 +3,7 @@ import { Card, Eyebrow, Section } from "@/components/site/Section";
 import { useRevealOnView } from "@/hooks/useRevealOnView";
 import mixLogo from "@/assets/mix-logo.webp";
 import hackNationLogo from "@/assets/hack-nation-logo.avif";
+import hsilLogo from "@/assets/hsil-logo.png";
 import { DiamondMark } from "@/components/site/Geometric";
 import { AIAgentVisual } from "@/components/site/AIAgentVisual";
 import {
@@ -34,11 +35,11 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "AccelP3 — AI Endpoint Risk Intelligence for Clinical Trials" },
+      { title: "AccelP3 — AI-Powered Phase III Clinical Trial Acceleration Platform" },
       {
         name: "description",
         content:
-          "AccelP3 is an AI platform for clinical trial endpoint risk intelligence. Plan trials, capture early patient signals, and detect endpoint risk earlier.",
+          "AccelP3 is an AI platform for clinical trial risk intelligence. It helps teams plan trials, capture early patient signals, and identify potential study risks before they become costly failures.",
       },
     ],
   }),
@@ -60,7 +61,7 @@ function HomePage() {
 
         <div className="relative mx-auto max-w-7xl px-6 lg:px-10 pt-20 pb-24 lg:pt-28 lg:pb-32 grid lg:grid-cols-12 gap-14 items-center">
           <div className="lg:col-span-6">
-            <Eyebrow>Endpoint Risk Intelligence</Eyebrow>
+            <Eyebrow>Agentic Clinical Trial Workflow</Eyebrow>
             <h1 className="mt-5 text-4xl sm:text-5xl lg:text-[3.75rem] font-bold leading-[1.04] tracking-tight">
               Accelerate your clinical trial with <span className="text-primary">Agent Intelligence</span>
             </h1>
@@ -133,7 +134,7 @@ function HomePage() {
         <div className="relative max-w-2xl">
           <Eyebrow>Product Workflow</Eyebrow>
           <h2 className="mt-4 text-3xl sm:text-4xl font-bold">
-            From hypothesis to endpoint risk signal.
+            From hypothesis to early outcome prediction.
           </h2>
         </div>
         <div className="relative mt-14">
@@ -170,7 +171,7 @@ function HomePage() {
             Three Connected Modules
           </h2>
           <p className="mt-3 text-sm text-white/60 max-w-md">
-            Trial Planning, Patient Signal Collection, and Endpoint Risk Detection work together as one AccelP3 workflow.
+            Trial Designing, Patient Data Collection, and Early Outcome Prediction work together as one AccelP3 workflow.
           </p>
         </div>
 
@@ -190,7 +191,7 @@ function HomePage() {
               index={0}
               tag="Module 01"
               icon={<Beaker />}
-              title="Trial Planning"
+              title="Trial Designing"
               description="Translate a clinical hypothesis into a structured trial plan that teams can review and refine."
               bullets={[
                 "Plain-language hypothesis input",
@@ -206,7 +207,7 @@ function HomePage() {
               reverse
               tag="Module 02"
               icon={<MessagesSquare />}
-              title="Patient Signal Collection"
+              title="Patient Data Collection"
               description="Collect patient symptom and recovery updates through a simple conversational workflow."
               bullets={[
                 "Chatbot interface for patient updates",
@@ -221,11 +222,11 @@ function HomePage() {
               index={2}
               tag="Module 03"
               icon={<LineChart />}
-              title="Endpoint Risk Detection"
-              description="Analyze early recovery patterns to help teams spot endpoint risk sooner."
+              title="Early Outcome Prediction"
+              description="Analyze early recovery patterns to help teams spot potential risk sooner."
               bullets={[
                 "Recovery trajectory modeling",
-                "Endpoint risk score",
+                "Potential risk score",
                 "Early warning during trial",
               ]}
               statusLabel="Risk Signal Detected"
@@ -275,15 +276,12 @@ function HomePage() {
             className="rounded-2xl bg-card border p-6 shadow-card flex flex-col hover:-translate-y-0.5 transition"
             style={{ borderColor: "oklch(0.88 0.04 200 / 0.7)" }}
           >
-            <div className="h-32 flex items-center justify-center rounded-xl bg-mint border border-border/60 px-4">
-              <div className="text-center">
-                <div className="font-display font-bold text-3xl tracking-tight text-navy leading-none">
-                  HSIL
-                </div>
-                <div className="text-[11px] font-mono uppercase tracking-[0.18em] text-navy/60 mt-2">
-                  Hackathon 2026
-                </div>
-              </div>
+            <div className="h-32 flex items-center justify-center rounded-xl bg-white border border-border/60 px-4 overflow-hidden">
+              <img
+                src={hsilLogo}
+                alt="Harvard T.H. Chan Health Systems Innovation Lab"
+                className="max-h-28 max-w-[90%] object-contain"
+              />
             </div>
             <h3 className="mt-5 text-base font-semibold text-navy">HSIL Hackathon 2026</h3>
             <p className="mt-2 text-sm text-navy/75 leading-relaxed">
@@ -486,4 +484,3 @@ function ModuleRow({
     </div>
   );
 }
-

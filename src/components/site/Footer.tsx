@@ -8,7 +8,7 @@ export function Footer() {
         <div className="md:col-span-4">
           <Logo className="h-10 w-auto mb-5" />
           <p className="text-sm text-navy/70 max-w-xs leading-relaxed">
-            AI-powered endpoint risk intelligence for clinical trials.
+            AI-Powered Phase III Clinical Trial Acceleration Platform.
           </p>
           <div className="mt-5 inline-flex items-center gap-2 rounded-full border border-primary/30 bg-primary/5 px-3 py-1 text-xs font-semibold text-primary">
             <span className="h-1.5 w-1.5 rounded-full bg-primary" />
@@ -30,10 +30,10 @@ export function Footer() {
             For
           </h4>
           <ul className="space-y-2.5 text-sm text-navy/80">
-            <li>Biotech teams</li>
-            <li>Pharma clinical development</li>
+            <li>Biotech Companies</li>
+            <li>Pharma Companies</li>
             <li>CROs</li>
-            <li>Academic trial centers</li>
+            <li>Academic Institutions</li>
           </ul>
         </div>
         <div className="md:col-span-3">

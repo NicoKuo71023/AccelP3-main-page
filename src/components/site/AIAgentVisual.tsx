@@ -6,7 +6,7 @@ import { Brain, FlaskConical, Users, LineChart } from "lucide-react";
  */
 export function AIAgentVisual() {
   return (
-    <div className="relative aspect-square w-full max-w-[560px] mx-auto">
+    <div className="relative aspect-square w-full max-w-[340px] sm:max-w-[460px] lg:max-w-[560px] mx-auto">
       {/* Soft radial backdrop */}
       <div
         className="absolute inset-0 rounded-full -z-10 opacity-80"
@@ -122,22 +122,22 @@ export function AIAgentVisual() {
 
       {/* 4 Orbiting nodes */}
       <Node
-        position="top-[6%] left-1/2 -translate-x-1/2"
+        position="top-[3%] sm:top-[6%] left-1/2 -translate-x-1/2"
         icon={<FlaskConical size={18} />}
         label="Hypothesis"
       />
       <Node
-        position="top-1/2 right-[6%] -translate-y-1/2"
+        position="top-1/2 right-[3%] sm:right-[6%] -translate-y-1/2"
         icon={<Users size={18} />}
         label="Patients"
       />
       <Node
-        position="bottom-[6%] left-1/2 -translate-x-1/2"
+        position="bottom-[3%] sm:bottom-[6%] left-1/2 -translate-x-1/2"
         icon={<LineChart size={18} />}
-        label="Endpoint"
+        label="Outcome"
       />
       <Node
-        position="top-1/2 left-[6%] -translate-y-1/2"
+        position="top-1/2 left-[3%] sm:left-[6%] -translate-y-1/2"
         icon={<DataIcon />}
         label="Signals"
       />
@@ -158,12 +158,12 @@ function Node({
     <div className={`absolute ${position}`}>
       <div className="flex flex-col items-center gap-2">
         <div
-          className="h-14 w-14 rounded-xl bg-card border shadow-soft flex items-center justify-center text-primary animate-[float_4s_ease-in-out_infinite]"
+          className="h-12 w-12 sm:h-14 sm:w-14 rounded-xl bg-card border shadow-soft flex items-center justify-center text-primary animate-[float_4s_ease-in-out_infinite]"
           style={{ borderColor: "oklch(0.88 0.04 200 / 0.7)" }}
         >
           {icon}
         </div>
-        <span className="text-[11px] font-semibold text-navy/80 bg-card/80 backdrop-blur px-2 py-0.5 rounded-full border border-border/60">
+        <span className="max-w-20 text-center text-[10px] sm:text-[11px] font-semibold text-navy/80 bg-card/80 backdrop-blur px-2 py-0.5 rounded-full border border-border/60">
           {label}
         </span>
       </div>
